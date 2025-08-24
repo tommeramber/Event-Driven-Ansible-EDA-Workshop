@@ -1,0 +1,3 @@
+---
+openshift_api: "{{ lookup('env', 'DEV_OCP_API') }}"
+openshift_token: "{{ lookup('env', 'DEV_OCP_AUTH_TOKEN') }}"
