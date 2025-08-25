@@ -25,7 +25,7 @@
 
 ##### Just for the workshop
     - name: "Delete Gitea pod only"
-      shell: "oc delete $(oc get po -n gitea -l app=gitea --no-headers -o name)"
+      shell: "oc -n gitea delete $(oc get po -n gitea -l app=gitea --no-headers -o name)"
 
     - name: "print problematic_node"
       shell: "echo {{ problematic_node }}"
